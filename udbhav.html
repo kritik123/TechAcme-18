@@ -1,0 +1,795 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Merienda|Ultra" rel="stylesheet">
+
+  <style>
+
+body{
+margin:0;
+background:#000;
+	
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  background: rgba(255,255,255,0);
+      position: fixed; /* Set the navbar to fixed position */
+    top:0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+	z-index:40;
+	
+}
+
+.topnav a {
+  float: right;
+  color: #fff;
+  font-family:poppins,sans-serif;
+  text-align: center;
+  padding: 45px 20px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight:600;
+}
+
+.topnav a:hover ,.dropdown:hover .dropbtn {
+border-bottom:2px solid white;
+}
+
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+
+
+.dropdown {
+    float: right ;
+    overflow: hidden;
+	font-family:poppins,sans-serif;
+	
+}
+
+.dropdown .dropbtn {
+	font-weight:600;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 45px 20px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+	width:100%;
+    position: fixed;
+	left:0;
+    background-color: #fff;
+	background:rgba(0,0,0,0.5);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+}
+.dropdown-column{
+	font-family:poppins,sans-serif;
+	box-sizing:border-box;
+	float: left;
+    width: 25%;
+    padding:0px;
+	color:#fff;
+	}
+.dropdown-column:hover{
+	box-shadow: 0px 0px 25px rgba(220,20,60,1);
+	} 
+.col2{
+	box-sizing:border-box;
+	float: left;
+	font-family:poppins,sans-serif;
+	width:50%;
+	padding: 10px;
+	color:#888;
+	font-weight:400;
+	}
+
+.dropdown-content a {
+	min-width:70px;
+    float: none;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	text-decoration:underline;
+	border-bottom:0px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	
+}
+.border-1{
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    opacity: 0.1;
+    position: fixed;
+    top: 25%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.border-2 {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    opacity: 0.1;
+    position: fixed;
+    top: 50%;
+    pointer-events: none;
+    z-index: 1000;
+}
+.border-3 {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    opacity: 0.1;
+    position: fixed;
+    top: 75%;
+    display: none;
+    z-index: 10;
+    pointer-events: none;
+}
+.border-4 {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    opacity: 0.1;
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+}
+.border-h1 {
+    width: 1px;
+    height: 100vh;
+    background: #fff;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 25%;
+    z-index: 1000;
+    pointer-events: none;
+}
+.border-h2 {
+    width: 1px;
+    height: 100vh;
+    background: #fff;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+    pointer-events: none;
+}
+.border-h3 {
+    width: 1px;
+    height: 100vh;
+    background: #fff;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 75%;
+    z-index: 1000;
+    pointer-events: none;
+}
+.circle-hero {
+    width: 50%;
+    height: 0;
+    border: 1px solid #fff;
+    opacity: 0.1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 100;
+    padding-bottom: 50%;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.cursor12 {
+
+  animation: cursor12 1s infinite;
+  -webkit-animation: cursor12 1s infinite;
+}
+@-webkit-keyframes cursor12 {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes cursor12 {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+  .card{
+background:	#000018;
+width:100%;
+height:72%;
+margin:0;
+padding:0;
+} 
+
+ .card14{
+background-image:url("https://media.giphy.com/media/l1J3DaHzWEp2bTpYs/giphy.gif");
+background-position:0px 0px;
+background-size:cover;
+background-attachment:fixed;
+width:100%;
+height:72%;
+margin:0;
+padding:0;
+}
+
+
+.col2{
+	box-sizing:border-box;
+	float: left;
+	font-family:poppins,sans-serif;
+	width:50%;
+	padding: 15px;
+
+	height:auto;
+	color:#fff;
+	font-size:20px;
+	text-align:justify;
+	font-weight:400;
+	}
+.txt{
+	width:97%;
+	height:20%;
+	  position:absolute;
+  top:54%;
+  left:3%;
+  color:#fff;
+  font-size:46px;
+  font-family: 'Merienda', cursive;
+  }
+ .col{
+text-align:center;
+	box-sizing:border-box;
+	float: left;
+	font-family:poppins,sans-serif;
+	font-size:22px;
+	width:100%;
+	padding: 10px;
+	color:#fff;
+	font-weight:400;
+	column-fill:balance;
+	
+	}
+ 
+
+ 
+	 
+  #myVideo {
+    background-color:#000;
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%; 
+    height: 100%;
+	z-index:-10;
+	object-fit: fill;
+}
+.accordion {
+    background-color:#02021f;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+	margin-top:10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+	border: 2px solid #e9b171;
+	border-radius:20px;
+}
+
+.active, .accordion:hover {
+    background-color:#e9b171;
+}
+
+.accordion:after {
+    content: '\25BC';
+    
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\25B2';
+	color: #000;
+}
+
+.panel {
+    padding: 0px 18px;
+    background-color: #02021f;
+    max-height: 0;
+	color:#fff;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+#map {
+    width: 100%;
+    height: 400px;
+    filter: grayscale(100%);
+	z-index:10;
+	}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.container{
+	height:40%;
+	width:100%;
+	color:#fff;
+	}
+.footer{
+    width: 100%;
+    height: 400px;
+	background:#000;
+	}
+
+.col4{
+	font-family:poppins,sans-serif;
+	font-size:18px;
+	box-sizing:border-box;
+	float: left;
+    width: 25%;
+    color:#fff;
+	}
+.card11{
+	display:flex;
+	background-image:url('img.jpg'); 
+	background-attachment: fixed;
+	background-position: 0px 0px;
+	background-repeat: no-repeat; 
+	width:100%; 
+
+	height:15%;
+	margin:0% 0% 0% 0%;
+	text-align:left;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 5%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0% 0% 0% 5%;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="vid1.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+
+  </video>
+<img style="position:absolute; display:block; width:40%; margin-right:auto; margin-left:auto; top:35%; left:31.6%; z-index:80;" src="techacme logo.png">
+
+
+<div class="border-1" style="top: 89px;"></div>
+<div class="border-2"></div>
+<div class="border-3"></div>
+<div class="border-4" style="bottom: 89px;"></div>
+<div class="border-h1"></div>
+<div class="border-h2"></div>
+<div class="border-h3"></div>
+<span class="circle-hero not-page" style=""></span>
+<div class="topnav" id="navbar">
+
+  <a href="#" style="margin-right:300px;">Contact Us</a>
+  <a href="#">Our Team</a>
+  <a href="#sponsers">Sponsers</a>
+  <a href="#faq">FAQ</a>
+
+
+  <div class="dropdown">
+    <button class="dropbtn">Events</button>
+  <div class="dropdown-content">
+  <div style="margin:0px 0px 0px 0px;">
+		<div class="dropdown-column">
+		
+     <a href="#" style="color:#fff; font-weight:800; font-size:18px; text-align:center;">TECHNICAL EVENTS</a>
+	 <div class="col2">
+		<a href="technical events/codehunt.html" style="margin-bottom:0px; padding-bottom:5px; padding-left:20px; ">Code Hunt</a>
+		<a href="technical events/venture.html" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">100 &#8377; Venture</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Robodino</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Cube Strength</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">CAD Designing</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 15px 20px;">Smart Village Challenge</a>
+		</div>
+		<div class="col2">
+		<a href="technical events/cirdeb.html" style="margin-bottom:0px; padding-bottom:5px;  ">Circuit Debugging</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Assemble Dissemble</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Apti & TV Quiz</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Water Rocket Propulsion</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 15px 20px;">Tech Zone</a></div></div>
+		<div class="dropdown-column">  
+  <a href="#"style="color:#fff; font-weight:800; font-size:18px; text-align:center;">CULTURAL EVENTS</a>
+  <div class="col2">
+		<a href="#" style="margin-bottom:0px; padding-bottom:5px; padding-left:20px; ">Talent Star Light</a>
+		<a href="cultural events/lensense.html" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Lensense</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Lan Gaming</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 15px 20px;">Nukkad Natak</a>
+		</div>
+		<div class="col2">
+		<a href="#" style="margin-bottom:0px; padding-bottom:5px;  ">Treasure Hunt</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Roadies Battleyard</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Art Junkies</a>
+		<a href="cultural events/mock.html" style="margin:0px 0px 0px 0px; padding:0px 0px 15px 20px;">Mock Parliament</a></div></div>
+  		<div class="dropdown-column">
+	<a href="#" style="color:#fff; font-weight:800; font-size:18px; text-align:center;">EVENTS FOR SCHOOL</a>
+	 <div class="col2">
+		<a href="#" style="margin-bottom:0px; padding-bottom:5px; padding-left:20px; ">Kai-Po-Che</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Debate Competition</a>
+		<a href="school events/skit.html" style="margin:0px 0px 0px 0px; padding:0px 0px 15px 20px;">Skit Competition</a>
+		</div>
+		<div class="col2">
+		<a href="#" style="margin-bottom:0px; padding-bottom:5px;  ">Model Presentation</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 5px 20px;">Talent Starlight</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 15px 20px;">Tambola</a></div></div>
+		<div class="dropdown-column">
+	<a href="#" style="color:#fff; font-weight:800; font-size:18px; text-align:center;">SHOW STOPPERS</a>
+			<div class="col2">
+		<a href="#" style="margin-bottom:0px; padding-bottom:5px;  ">Auto Expo</a>
+		<a href="#" style="margin:0px 0px 0px 0px; padding:0px 0px 15px 20px;">Stunt Show</a></div>
+					<div class="col2">
+		<a href="#" style="margin-bottom:0px; padding-bottom:5px;  ">Aero Modelling Show</a></div></div>
+  </div>
+  </div></div>
+    <a href="#about">About Fest</a>
+  <a href="#">Home</a>
+  <a href="#"><img src="logo3.png" style="position:fixed; height:10%; width:5.5%; float:left; top:0; left:18%;"></a>
+</div>
+
+<div class="card14" id="about" style="margin:0% 0% 0% 0%; padding-bottom:5%; ">	
+	<p id="startchange"style="margin:0px 0px 0px 0px;">
+<h2 align="center" style="font-family:poppins,sans-serif; font-size:32px; color:#fff; font-weight:300; margin:0px 0px 20px; padding-top:90px;">About Fest</h2>
+
+<p align="center" style="font-size:30px; color:#fff; margin:20px 0px 10px 0px; line-height:0.1;">&mdash;&mdash;&mdash;&mdash;</p>
+<p align="left" class="col2" style="padding-left:90px;">Oriental Group of Institutes, Bhopal is the name that incites awe and respect in the field of technical education.
+ Developed as a family, it has pursued a unique path of moulding bright minds into young technocrats that are Indian in spirit and global in attitude.
+ OGI takes pride in itself as being the “Cradle of intellect”. We are one of the top ranked Institute in Central India.
+ The OGI believes in not only the evolution of the student’s mind but also want them to be creative and active culturally.
+ In an endeavor to bring forth the gleaming radiance of the wonderful world of engineers, the students of the Institute
+ are organizing a national level techno-cultural symposium “TechAcme 2k18” from 25th to 27th October 2018.</p>
+<p align="left" class="col2" style="padding-right:90px;" >It is a conglomeration of events which includes competitions such as Robodino Competition,
+ Assemble-Disassemble, Innovative Design in CAD, Water Rocket Propulsion, Ladder Logic Trivia(Electrical Circuit Model Designing),
+ Circuit Debbuging, Innovative Idea Presentation, Code Hunt, Lan Gaming with PUBG, Lensense (Photography competition).
+ The Cultural program includes Nukkad Natak, Apti & TV Quiz- Sabse Smart Kaun, Mock Parliament, Talent Starlight
+ (Singing, Dancing-Single/Group,Act, Instrumental), Treasure Hunt, Roadies Battle yard, Sketching & Painting, 
+ 100Rs/-Venture. Along with these, we are also organizing Aeromodelling Show, Stunt Show and Auto Expo.</p>
+ <p align="left" class="col" style="padding:0px 90px 0px 90px">The motive behind the event is to provide a platform for hardworking and innovative young minds, to showcase their talents.
+ Creativity and awareness are the things that will be counted here in<br> “Tech Acme 2k18”.</p>
+</p></div>
+<div class="card11">
+<div style="background: rgba(0,0,0,0.6); width:100%; height:15%; position:absolute; display:flex; ">
+<p style="font-size:30px; color:#fff; font-family:poppins,sans-serif; padding:1% 0% 0% 0%; margin-left:2%; ">Be A Part Of this Fest!  Join Us Now</p>
+<button style="border-radius:30px; height:60px; width:190px; background:#fff; border:none; ; margin:2% 0% 0% 60%;">
+<a href="#" style="text-decoration:none; color:#006400; font-weight:800; font-size:16px;  font-family:poppins,sans-serif;">REGISTER NOW</a></button>
+</div></div>
+<div class="card" id="faq" style="margin:0px 0px 0px 0px; padding-top:150px; padding-bottom:auto; ">
+<h2 align="center" style="font-family:poppins,sans-serif; font-size:32px; color:#fff; font-weight:300; margin:0px 0px 20px; padding-top:90px;">FAQ</h2>
+<p align="center" style="font-size:30px; color:#fff; margin:20px 0px 10px 0px; line-height:0.1;">&mdash;&mdash;&mdash;&mdash;</p>
+<div class="col2" style="padding-left:90px;" >
+<button class="accordion">What is TechAcme 2K18?</button>
+<div class="panel">
+  <p>
+TechAcme 2K18 is the annual Technical Festival organized at Oriental Institute of Science & Technology, Bhopal. It is one of the largest student-organized fest in Central India.</p>
+</div>
+
+<button class="accordion">Registration - as a team or individually ?</button>
+<div class="panel">
+  <p>It depends in which event you are participating. But, we will be very happy to see you come with your friends.</p>
+</div>
+
+<button class="accordion">Who can Participate?</button>
+<div class="panel">
+  <p>Anyone having a valid student ID card of their college or university is eligible to take part in the competition.</p>
+</div>
+<button class="accordion">What should I bring?</button>
+<div class="panel">
+  <p>We’ll send you a comprehensive list once it’s closer to showtime, but it’ll be basically what you’d need for any sleepover: laptop, charger, deodorant, change of clothes. You won’t need food or drinks; we’ve got you covered there.</p>
+</div>
+
+</div><div class="col2"style="padding-right:90px;">
+<button class="accordion">Can a team have members from different colleges?</button>
+<div class="panel">
+  <p>Yes</p></div>
+
+<button class="accordion">Will I be provided with accomodation?</button>
+<div class="panel">
+  <p>You will be notified soon.</p>
+</div>
+
+<button class="accordion">When will the registration open?</button>
+<div class="panel">
+  <p>Very soon. But you are free to contact us at any point of time.</p>
+</div>
+<button class="accordion">Having any other query?</button>
+<div class="panel">
+  <p>The TechAcme team is eagerly waiting for you on Facebook or mail us instead.</p>
+</div>
+</div></div>
+
+<div class="card" id="sponsers" style="margin:0px 0px 0px 0px; padding-top:20px; ">
+<div class="container" style="width:80%; margin:auto;">
+<h2 align="center" style="font-family:poppins,sans-serif; font-size:32px; color:#fff; font-weight:300; margin:0px 0px 20px; padding-top:90px;">Our Educational Partners</h2>
+<p align="center" style="font-size:30px; color:#fff; margin:20px 0px 90px 0px; line-height:0.1;">&mdash;&mdash;&mdash;&mdash;</p>
+   <section class="customer-logos slider">
+      <div class="slide"><img src="pics/img11.png"></div>
+      <div class="slide"><img src="pics/img12.jpg"></div>
+      <div class="slide"><img src="pics/img13.jpg"></div>
+      <div class="slide"><img src="pics/img14.gif"></div>
+      <div class="slide"><img src="pics/img15.jpg"></div>
+      <div class="slide"><img src="pics/img14.gif"></div>
+      <div class="slide"><img src="pics/img13.jpg"></div>
+      <div class="slide"><img src="pics/img12.jpg"></div>
+   </section>
+</div></div>
+<div id="map"></div>
+<div class="footer" >
+<div style="margin:0px 0px 0px 0px;">
+<div class="col4" style="margin:auto; text-align:center;" >
+<a href="#"><img src="pics/logo4.png" style="position:absolute; left:9.7%; height:10%; width:5.5%; margin-top:2%; z-index:40; "></a>
+<p align="center" style="margin-top:30%; ">Oriental Institute of Science & Technology
+Bhopal, Madhya Pradesh, India
+
+Copyright &copy; TechAcme2K18. All rigtht reserved.</p>
+</div>
+<div class="col4">
+
+ <p align="center" style="margin-top:30%;">
+Oriental Campus, Opp Patel Nagar,
+Raisen Road, Bhopal(M.P.)-462021</p>
+<p align="center" style="margin-top:5%; margin-bottom:0;">
+ Akshay: +91-9589204838</p>
+ <p align="center" style="margin-top:1%;">
+Chetanya: +91-9754737165</p>
+<p align="center" style="margin-top:1%; margin-bottom:0;">
+ techacme@oriental.ac.in</p>
+ <p align="center" style="margin-top:1%; ">
+oistbpl@oriental.ac.in</p>
+</div>
+<div class="col4">
+ <p align="center" style="margin-top:30%;">
+ FOLLOW US ON:</p>
+ <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+</div>
+<div class="col4">
+
+</div>
+</div></div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="js/site.js"></script>
+<script  src="js/index.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(23.248727,77.502585);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(23.248727,77.502585), zoom: 18
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+
+
+</script>
+<script>
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('#navbar').css('background-color', '#000');
+		  $('#navbar').css('width', '100%');
+       } else {
+          $('#navbar').css('background-color', 'transparent');
+       }
+   });
+});
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeUBmVp6XI7LCNyAehqDPqjQaF4VCKecQ&callback=myMap"></script>
+</body>
+</html>
+</html>
